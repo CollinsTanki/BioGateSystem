@@ -13,7 +13,7 @@ import {
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-react';
+import { BookOpen, Folder, LayoutGrid, GraduationCap, Laptop, School } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -22,6 +22,25 @@ const mainNavItems: NavItem[] = [
         href: dashboard(),
         icon: LayoutGrid,
     },
+     {
+        title: 'Students',
+        href: 'students',
+        icon: GraduationCap,
+    },
+    {
+        title: 'Laptops',
+        href: 'laptops',
+        icon: Laptop
+    },    
+    {
+        title: 'GateEntries',
+        href: 'gateentries',
+        icon: School
+
+    },
+   
+   
+
 ];
 
 const footerNavItems: NavItem[] = [
