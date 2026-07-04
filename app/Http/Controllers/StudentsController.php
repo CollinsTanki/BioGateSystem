@@ -8,9 +8,11 @@ use Inertia\Inertia;
 class StudentsController extends Controller
 {
     public function Index(){
-        return Inertia::render('Students/Index', []);
+        return Inertia::render('Students/Index', []);        
+    }
+    public function create(){
+        return Inertia::render('Students/Create');
 
-        
     }
     //
 }
